@@ -44,6 +44,14 @@ app.get('/lol', (req , res) => {
     });
 });
 
+app.get('/projects', (req , res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'projects',
+        projects: 'My Projects:'
+    });
+});
+
+
 app.listen(port, () => {
     console.log(`server is running on ${port}`);
 });
